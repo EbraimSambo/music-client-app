@@ -12,7 +12,7 @@ import { MdCastConnected } from "react-icons/md";
 import image from "@/assets/ab67616d00001e0229c1b782f11747dee1d35c9e.jpeg"
 const PlayerControl = () => {
     return (
-        <div className='py-2 px-5 fixed w-full bottom-0 right-0 left-0 bg-[#000000] z-20'>
+        <div className='py-2 px-5  w-full fixed bottom-0 right-0 left-0 bg-[#000000] z-20'>
             <div className="flex items-center justify-between gap-8">
                 <div className="flex items-center gap-0">
                     <div className="relative h-16 w-16">

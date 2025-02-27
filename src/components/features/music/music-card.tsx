@@ -9,7 +9,7 @@ import { Music } from './core/types';
 const MusicCard = ({ music }: { music: Music }) => {
     const [showPlay, setPLay] = React.useState(false)
     return (
-        <Link href={"/"}
+        <Link href={"/tracks/"+music.title}
             onMouseDown={() => setPLay(true)}
             onMouseOut={() => setPLay(false)}
             className=''>

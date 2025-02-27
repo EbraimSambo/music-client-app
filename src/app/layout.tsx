@@ -6,6 +6,9 @@ const reboto = localFont({
   src: [
     { 
       path:'../config/fonts/Roboto/static/Roboto-Medium.ttf'
+    },
+    { 
+      path:'../config/fonts/Roboto/static/Roboto-Bold.ttf'
     }
   ]
 })

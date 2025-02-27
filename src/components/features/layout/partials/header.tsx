@@ -11,7 +11,7 @@ import { FaSpotify } from "react-icons/fa6";
 
 const Header = () => {
     return (
-        <div className='py-2 px-8 fixed w-full top-0 right-0 left-0 bg-[#000000] z-20'>
+        <div className='py-2 px-8  w-full fixed top-0 right-0 left-0 bg-[#000000] z-20'>
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-8">
                     <Link href={"/"}>
