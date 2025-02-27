@@ -9,7 +9,7 @@ import { IoVolumeMediumOutline } from "react-icons/io5";
 import { MdWebAsset } from "react-icons/md";
 import { BsViewList } from "react-icons/bs";
 import { MdCastConnected } from "react-icons/md";
-
+import image from "@/assets/ab67616d00001e0229c1b782f11747dee1d35c9e.jpeg"
 const PlayerControl = () => {
     return (
         <div className='py-2 px-5 fixed w-full bottom-0 right-0 left-0 bg-[#000000] z-20'>
@@ -17,7 +17,7 @@ const PlayerControl = () => {
                 <div className="flex items-center gap-0">
                     <div className="relative h-16 w-16">
                         <Image
-                            src={"/images/file.enc"}
+                            src={image}
                             fill alt=''
                             className='rounded-xl p-2'
                         />

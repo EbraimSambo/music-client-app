@@ -4,8 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { ImPlay3 } from "react-icons/im";
+import { Music } from './core/types';
 
-const MusicCard = () => {
+const MusicCard = ({ music }: { music: Music }) => {
     const [showPlay, setPLay] = React.useState(false)
     return (
         <Link href={"/"}
@@ -15,7 +16,7 @@ const MusicCard = () => {
             <Card className='hover:hover:bg-gray-100/5 rounded-md bg-transparent border-none p-[1px]'>
                 <div className="relative h-40 w-full">
                     <Image
-                        src={"/images/file.enc"}
+                        src={music.image}
                         fill alt=''
                         className='rounded-xl p-2'
                     />
@@ -27,7 +28,7 @@ const MusicCard = () => {
                 </div>
                 <div className="pt-2 translate-x-3 -translate-y-2">
                     <h3 className="text-sm text-white">
-                        Monsta Doy
+                        {music.artist}
                     </h3>
                     <h4 className="text-sm text-gray-400">
                         Vamos Bazzar

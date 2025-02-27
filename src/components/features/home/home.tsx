@@ -4,11 +4,12 @@ import MusicCard from '../music/music-card'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Link from 'next/link'
 import Footer from '../layout/partials/footer'
+import { musics } from './data'
 
 const Home = () => {
     return (
         <div className='bg-gray-100/10 rounded-lg h-full relative'>
-            <div className="flex items-center gap-3 p-4 absolute top-0 right-0 left-0 z-10 bg-[#191919] shadow-sm">
+            <div className="flex items-center gap-3 rounded-lg p-4 absolute top-0 right-0 left-0 z-10 bg-[#191919] shadow-sm">
                 <button className='bg-white text-black  rounded-full py-1 px-3 text-sm'>
                     Todas
                 </button>
@@ -33,10 +34,10 @@ const Home = () => {
                         <Carousel className="w-full pl-2"
                         >
                             <CarouselContent className="-ml-1">
-                                {Array.from({ length: 15 }).map((_, index) => (
+                                {musics.map((music, index) => (
                                      <CarouselItem key={index} className="pl-2 md:basis-1/2 lg:basis-1/5" >
                                          <div className="">
-                                             <MusicCard  />
+                                             <MusicCard music={music}  />
                                          </div>
                                      </CarouselItem>
                                 ))}
@@ -56,10 +57,10 @@ const Home = () => {
                         <Carousel className="w-full pl-2"
                         >
                             <CarouselContent className="-ml-1">
-                                {Array.from({ length: 15 }).map((_, index) => (
+                                {musics.map((music, index) => (
                                      <CarouselItem key={index} className="pl-2 md:basis-1/2 lg:basis-1/5" >
                                          <div className="">
-                                             <MusicCard  />
+                                             <MusicCard  music={music} />
                                          </div>
                                      </CarouselItem>
                                 ))}

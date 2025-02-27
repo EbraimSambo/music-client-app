@@ -7,14 +7,15 @@ import { LuShoppingBag } from "react-icons/lu";
 import { LuCloudDownload } from "react-icons/lu";
 import { Bell } from 'lucide-react';
 import Image from 'next/image';
+import { FaSpotify } from "react-icons/fa6";
 
 const Header = () => {
     return (
         <div className='py-2 px-8 fixed w-full top-0 right-0 left-0 bg-[#000000] z-20'>
             <div className="flex justify-between items-center">
-                <div className="flex items-center gap-10">
+                <div className="flex items-center gap-8">
                     <Link href={"/"}>
-                        <SiApplemusic className='h-8 w-8' />
+                        <FaSpotify className='h-8 w-8' />
                     </Link>
                     <div className="flex items-center gap-4">
                         <Link href={"/"} className=''>
