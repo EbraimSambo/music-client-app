@@ -8,7 +8,7 @@ import image from "@/assets/ab67616d00001e027f3b0d0ae1ae24c6d0b18510.jpeg"
 const SideBar = () => {
     return (
         <div className='bg-gray-100/10 rounded-xl h-full relative'>
-            <div className="p-4 space-y-4 rounded-xl absolute top-0 right-0 left-0 bg-[#191919a8] shadow-sm z-10">
+            <div className="p-4 space-y-4 rounded-xl absolute top-0 right-0 left-0 bg-[#191919a8] shadow-sm z-[3000]">
                 <div className="flex items-center justify-between">
                     <button className='flex items-center gap-1 text-gray-400 hover:text-white'>
                         <Library className='h-8 w-8' />
